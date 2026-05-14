@@ -9,7 +9,7 @@ body {
 
 .custom-navbar {
   background-color: #1e4d12;
-  width: 95%;
+  width: 90%;
   padding: 10px 20px;
   min-height: 105px;
 
@@ -28,14 +28,14 @@ body {
 }
 
 .logo-text {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
   font-weight: 500;
   line-height: 1;
 }
 
 .nav-link {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 2px;
+  font-weight: 200;
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -1436,11 +1436,15 @@ body {
 
 .about-hero {
   width: 100%;
-  height: 70vh;   /* reduced image height */
+  height: 70vh;
 
-  position: relative;
-
+  position: absolute;
   overflow: hidden;
+  top: 0%;
+
+  /* image ko navbar ke peeche le jane ke liye */
+  /* margin-top: -110px;   navbar height ke equal */
+  /* padding-top: 90px; */
 }
 
 /* ================= IMAGE ================= */
@@ -1448,9 +1452,8 @@ body {
 .about-hero-image {
   width: 100%;
   height: 100%;
-
+   top: 0%;
   object-fit: cover;
-
   display: block;
 }
 
@@ -1467,7 +1470,6 @@ body {
   justify-content: center;
 
   text-align: center;
-
   padding: 20px;
 }
 
@@ -1478,8 +1480,7 @@ body {
 
   color: white;
 
-  font-size: 3.8rem;   /* reduced font size */
-
+  font-size: 3.8rem;
   font-weight: 800;
 
   line-height: 1.15;
@@ -1493,89 +1494,21 @@ body {
 
   .about-hero {
     height: 55vh;
+
+    margin-top: -70px;
+    padding-top: 70px;
   }
 
   .about-overlay h1 {
     font-size: 2rem;
-
     line-height: 1.3;
   }
-}.about-content-section {
-  width: 100%;
-
-  background-color: #f7f7f7;
-
-  padding: 70px 0;
 }
-
-.about-content-container {
-  width: 76%;
-
-  margin: 0 auto;
-}
-
-/* ================= HEADINGS ================= */
-
-.about-content-container h2 {
-  margin: 0 0 35px;
-
-  text-align: center;
-
-  font-size: 2.6rem;   /* reduced 40% */
-
-  font-weight: 800;
-
-  line-height: 1.3;
-
-  color: #1f3d14;
-}
-
-.purpose-heading {
-  margin-top: 70px !important;
-}
-
-/* ================= PARAGRAPHS ================= */
-
-.about-content-container p {
-  margin: 0 0 28px;
-
-  font-size: 1.15rem;   /* reduced 40% */
-
-  line-height: 1.8;
-
-  color: #111111;
-}
-
-.about-content-container strong {
-  font-weight: 800;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 992px) {
-
-  .about-content-section {
-    padding: 50px 20px;
-  }
-
-  .about-content-container {
-    width: 100%;
-  }
-
-  .about-content-container h2 {
-    font-size: 1.7rem;
-  }
-
-  .about-content-container p {
-    font-size: 0.95rem;
-
-    line-height: 1.8;
-  }
 
   .purpose-heading {
     margin-top: 50px !important;
   }
-}
+
 .vision-mission-section {
   width: 100%;
 
@@ -2220,7 +2153,8 @@ body {
   /* REDUCED HEIGHT BY 30% */
   height:42vh;
 
-  position:relative;
+  position:absolute;
+  top: 0%;
 
   overflow:hidden;
 }
@@ -2328,7 +2262,7 @@ body {
 
   font-weight:700;
 
-  margin-bottom:30px;
+  margin-bottom:140px;
 }
 
 /* ================= TEXT ================= */
